@@ -6,7 +6,7 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background: #2C3E50; /* Dark background for a sleek look */
+    background: #2D3436; /* Dark background for a sleek look */
     color: #E0E0E0; /* Light text for contrast */
     text-align: center;
 }
@@ -90,7 +90,7 @@ body {
 
 /* Hover effect on project boxes */
 .project:hover {
-    background: #007bff;
+    background: #34495E;
     color: white;
     transform: scale(1.05);
 }
