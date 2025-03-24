@@ -8,13 +8,12 @@ body {
     text-align: center;
 }
 
-/* Title Section */
+/* Main Title */
 #title {
     color: #222;
     font-size: 48px;
     font-weight: 700;
-    padding: 1.5%;
-    margin: 0;
+    margin-top: 20px;
     letter-spacing: 1px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -33,6 +32,11 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
+#img-div img {
+    width: 100%;
+    height: auto;
+}
+
 #img-div:hover {
     transform: scale(1.1);
 }
@@ -40,7 +44,7 @@ body {
 /* About Section */
 #about {
     font-size: 20px;
-    padding: 15px;
+    padding: 20px;
     max-width: 600px;
     margin: auto;
     background: rgba(255, 255, 255, 0.8);
@@ -51,53 +55,48 @@ body {
 
 /* Project List */
 #projectlist {
+    margin-top: 30px;
     font-size: 22px;
     font-weight: 600;
-    margin-top: 20px;
     text-transform: uppercase;
     color: #007bff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Styled Links */
-#style {
-    text-decoration: none;
-    color: #ff6b6b;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-}
-
-#style:hover {
-    color: #d43f3f;
-    text-decoration: underline;
-    transform: scale(1.1);
-}
-
-/* Image Container */
-#img-div2 {
-    text-align: center;
-    padding: 25px;
-}
-
-/* Fun Button */
-.fun-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
-    background-color: #ff6b6b;
-    color: white;
+.project {
+    background-color: white;
+    padding: 15px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
     font-size: 18px;
     font-weight: bold;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
+    color: #333;
     transition: all 0.3s ease-in-out;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.fun-button:hover {
-    background-color: #d43f3f;
-    transform: scale(1.1);
+.project:hover {
+    background-color: #ff6b6b;
+    color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Email Contact Section */
+#img-div2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#img-div2 img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+#img-div2 img:hover {
+    transform: scale(1.2);
 }
 
 /* Responsive Design */
@@ -105,8 +104,14 @@ body {
     #title {
         font-size: 36px;
     }
+    
     #about {
         font-size: 18px;
         padding: 10px;
+    }
+
+    .project {
+        width: 80%;
+        font-size: 16px;
     }
 }
