@@ -1,4 +1,3 @@
-/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
 /* General Styles */
@@ -67,6 +66,7 @@ body {
     color: #ffffff;
 }
 
+/* Project Cards */
 .project {
     background: rgba(255, 255, 255, 0.1);
     padding: 15px;
@@ -80,6 +80,13 @@ body {
     transition: all 0.3s ease-in-out;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+}
+
+.project a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Maintain the same text color */
+    display: block; /* Ensures the entire project box is clickable */
+    padding: 10px;
 }
 
 .project:hover {
