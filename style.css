@@ -1,42 +1,78 @@
-
-
-#title {
-    color:black;
-    text-align:center;
+/* General Styles */
+body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size:45px;
-    padding:1.5%;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-#img-div{
-    width: 200px;        
-    height: 200px;        
-    border-radius: 50%;   
-    overflow: hidden;    
-    display: flex; 
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#about{
-    font-family:Arial, Helvetica, sans-serif;
-    text-align:center;
-    font-size:20px;
-    padding: 1%;
-
-}
-
-#projectlist{
-    font-family:Arial, Helvetica, sans-serif;
-    text-align:center;
-
-}
-
-#style{
-    text-decoration:none;
-}
-
-#img-div2{
+/* Title Section */
+#title {
+    color: #222;
     text-align: center;
-    padding:25px;
+    font-size: 45px;
+    font-weight: bold;
+    padding: 1.5%;
+    margin: 0;
+}
+
+/* Profile Image Container */
+#img-div {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    font-size: 20px;
+    padding: 1%;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Project List */
+#projectlist {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+/* Styled Links */
+#style {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+}
+
+#style:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Image Container 2 */
+#img-div2 {
+    text-align: center;
+    padding: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #title {
+        font-size: 35px;
+    }
+    #about {
+        font-size: 18px;
+        padding: 2%;
+    }
 }
